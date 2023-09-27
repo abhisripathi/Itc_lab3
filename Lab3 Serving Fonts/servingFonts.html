@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serving Fonts</title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="font.css">
     <style>
+        /* Self-hosted font - Pacifico */
+        @font-face {
+            font-family: 'Pacifico';
+            src: url('C:\Users\abhis\OneDrive\Desktop\fall_2023\PS\ITC\Lab3 Serving Fonts\pacifico\Pacifico-Regular.woff') format('woff'),
+                 url('C:\Users\abhis\OneDrive\Desktop\fall_2023\PS\ITC\Lab3 Serving Fonts\pacifico\Pacifico-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: 'Pacifico', cursive;
+            font-family: 'Pacifico', sans-serif;
+            font-size: 24px;
+            padding: 20px;
         }
     </style>
 </head>
+
 <body>
-    <h1>Serving Fonts to Web Clients</h1>
-    
-    <h2>1. Using Web Font Hosting Services</h2>
+    <h1>Delivering Fonts to Web Clients</h1>
     <p>
-        One of the easiest methods to serve fonts is by using web font hosting services like Google Fonts or Adobe Fonts. 
-        These platforms allow you to choose a font and provide a link or import statement to include in your HTML or CSS. 
-        Once included, you can then set that font for any HTML element using CSS.
+        One popular method to serve fonts to a website is using services like Google Fonts. However, for this exercise, we're self-hosting a font. By using the CSS @font-face rule, we can specify our own font file to be loaded. The font I've chosen is "Pacifico", which is quirky yet readable. This font is being served from our own server.
     </p>
-
-    <h2>2. Self-hosting fonts</h2>
     <p>
-        Another method is self-hosting, where you host the font files on your own server or project directory. 
-        By using the <code>@font-face</code> rule in CSS, you specify the path to the font file and then apply the font using the specified font family name.
-    </p>
-
-    <p>
-        Both methods have their pros and cons. Using a web font hosting service is straightforward and offers a wide variety of fonts, while self-hosting gives you more control and can be used when dealing with custom fonts.
+        As you can observe, this page is styled using the "Pacifico" font, proving that our self-hosted font is being served and rendered correctly.
     </p>
 </body>
+
 </html>
