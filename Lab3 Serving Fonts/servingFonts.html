@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serving Fonts</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font.css">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Serving Fonts to Web Clients</h1>
+    
+    <h2>1. Using Web Font Hosting Services</h2>
+    <p>
+        One of the easiest methods to serve fonts is by using web font hosting services like Google Fonts or Adobe Fonts. 
+        These platforms allow you to choose a font and provide a link or import statement to include in your HTML or CSS. 
+        Once included, you can then set that font for any HTML element using CSS.
+    </p>
+
+    <h2>2. Self-hosting fonts</h2>
+    <p>
+        Another method is self-hosting, where you host the font files on your own server or project directory. 
+        By using the <code>@font-face</code> rule in CSS, you specify the path to the font file and then apply the font using the specified font family name.
+    </p>
+
+    <p>
+        Both methods have their pros and cons. Using a web font hosting service is straightforward and offers a wide variety of fonts, while self-hosting gives you more control and can be used when dealing with custom fonts.
+    </p>
+</body>
+</html>
